@@ -1,11 +1,12 @@
-# Maintainer: Aetf <aetf@unlimitedcodeworks.xyz>
+# Maintainer: Daniel Berjón <asuranceturix@gmail.com>
+# Contributor: Aetf <aetf@unlimitedcodeworks.xyz>
 # Contributor: juantascon <juantascon.aur@horlux.org>
 # Contributor: Ilya Kuzmin <i.g.kuzmin.spb@gmail.com>
 
 pkgname=hid-apple-patched-git-dkms
 _pkgname=hid-apple-patched
 
-pkgver=20200401.5ebf708
+pkgver=20230422.46f3457
 pkgrel=1
 
 url="https://github.com/free5lot/hid-apple-patched"
@@ -13,7 +14,7 @@ arch=('any')
 license=('GPL2')
 pkgdesc="Swaping the Fn and left Control keys and some other mapping tweaks on Macbook Pro and Apple keyboards (DKMS)"
 
-depends=('dkms' 'mkinitcpio-modconf-hook')
+depends=('dkms')
 makedepends=('git')
 
 install=hid-apple-patched-dkms.install
@@ -26,7 +27,7 @@ source=("git+https://github.com/free5lot/$_pkgname#branch=master"
 sha256sums=('SKIP'
             '4b94f1f55febddad5ff60a8918487b883ceadd4e6c3fb280e98e4e235cd09663'
             'bf214ca80aa4abb6fe85c1108ea7c941684a5bc57891982b0aefafd5a6339a26'
-            '5d2457728a93e73a96f2ca88f66455859363f083097ad20e661bdc12dc44a9ba')
+            '659d94d4b569efe2d3b5dfc4345417be516198423ecc113d7c31e682045db69f')
 
 pkgver() {
   cd "$srcdir"/"$_pkgname"
