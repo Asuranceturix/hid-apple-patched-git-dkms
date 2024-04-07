@@ -1,14 +1,13 @@
 pkgbase = hid-apple-patched-git-dkms
 	pkgdesc = Swaping the Fn and left Control keys and some other mapping tweaks on Macbook Pro and Apple keyboards (DKMS)
 	pkgver = 20230422.46f3457
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/free5lot/hid-apple-patched
 	install = hid-apple-patched-dkms.install
 	arch = any
 	license = GPL2
 	makedepends = git
 	depends = dkms
-	depends = mkinitcpio-modconf-hook
 	source = git+https://github.com/free5lot/hid-apple-patched#branch=master
 	source = hid_apple.depmod
 	source = hid_apple.modprobe

@@ -7,7 +7,7 @@ pkgname=hid-apple-patched-git-dkms
 _pkgname=hid-apple-patched
 
 pkgver=20230422.46f3457
-pkgrel=1
+pkgrel=2
 
 url="https://github.com/free5lot/hid-apple-patched"
 arch=('any')
